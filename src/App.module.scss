@@ -1,0 +1,27 @@
+.navBar {
+    max-width: 20%;
+    height: 100vh;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+}
+
+.main {
+    max-width: 80%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    position: fixed;
+    top: 0;
+    left: 650px;
+    overflow-x: hidden;
+}
+
+.button {
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+

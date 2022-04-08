@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter&family=League+Gothic&family=Press+Start+2P&display=swap');
+
+.navBarContent {
+    height: 100vh;
+    padding: 20px 20px;
+    background-color: #3C89A8;
+
+    ul {
+        list-style-type: none;
+        list-style-position: inside;
+        height: 100%;
+        width: 100%;
+        padding: 10px 10px;
+        text-align: left;
+        font-family: 'Inter';
+        color: #F5F5F5;
+
+        li {
+            padding: 10px 0px;
+        }
+    }
+}
