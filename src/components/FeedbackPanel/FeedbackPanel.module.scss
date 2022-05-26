@@ -1,22 +1,38 @@
 .background {
-    height: calc(100vh - 75px);
-    width: 85vh;
+    height: 90%;
+    width: 80%;
     position: fixed;
     top: 100px;
     right: 0;
+    background-image: linear-gradient(
+        rgba(202, 199, 199, 0.3),
+        rgba(202, 199, 199, 0.3)
+      ),
+      url("../../assets/BrewDogBeersimg.jpeg");
+    //background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 20px;
 
     .feedback {
         height: 200px;
         width: 300px;
-        background-color: grey;
-        border: solid 1px black;
+        background-color: #79B9C2;
+        border: solid 1px lightgrey;
+        border-radius: 5px;
+        margin: 50px 425px;
+        text-align: center;
 
         h2 {
-            color: red;
+            color: #FBFBFB;
+            font-family: 'League Gothic';
+            font-size: 40px;
         }
 
         p {
-            color: green;
+            color: #FBFBFB;
+            font-family: 'Inter';
+            font-size: 15px;
         }
     }
 }

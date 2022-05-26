@@ -1,2 +1,21 @@
+.searchPanel{
+    display: grid;
+    flex-wrap: wrap;
+    height: 40px;
+    color:#F6F7F7;
+}
 
+
+input {
+    display: grid;
+    flex-wrap: wrap;
+    height: 25px;
+    width: 130px;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    background-color:  #F6F7F7;
+    margin: 8px 0px;
+    font-family: 'Inter';
+    font-size: 15px;
+}
 

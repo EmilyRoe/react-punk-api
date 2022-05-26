@@ -6,19 +6,29 @@ import Routes from "./containers/Routes";
 
 const App = () => {
   const [beers, setBeers ] = useState([]);
-  const [searchText, setSearchText] = useState("");
-  const [ beersWithHighABV, setBeersWIthHighABV ] = useState(false);
+  const [ searchText, updateSearchText] = useState("");
+  const [ beersWithHighABV, setBeersWithHighABV ] = useState(false);
+  const [ beersClassicRange, setBeersClassicRange ] = useState(false);
+  const [ beersWithHighAcidity, setBeersWithHighAcidity ] = useState(false);
 
   const searchBeersByName = searchText ? `?beer_name=${searchText}` : "";
+  const highAbvBeers = beersWithHighABV ? `?abv_gt=7` : "";
+  const classicRangeBeers = beersClassicRange ? `?brewed_before=12-2009` : "";
 
-  // For the filters, we probably need some kind of checkbox that toggles between true and false. If it is true, we will
-  // need to make another request to the API. (Look at the DOCS to find the relevant url param.)
+  const handleABVFilter = () => {
+    setBeersWithHighABV(!beersWithHighABV)
+  }
+
+  const handleClassicBeers = () => {
+    setBeersClassicRange(!beersClassicRange)
+  }
+
+  const handleHighAcidity = () => {
+    setBeersWithHighAcidity(!beersWithHighAcidity)
+  }
 
   const fetchBeers = (searchTerm) => {
-
-    // fetch(`https://api.punkapi.com/v2/beers/search.php?s=${searchTerm}`)
-
-    fetch(`https://api.punkapi.com/v2/beers${searchBeersByName}`)
+    fetch(`https://api.punkapi.com/v2/beers${searchBeersByName}${highAbvBeers}${classicRangeBeers}`)
       .then((res) => res.json())
       .then((jsonResponse) => {
         console.log(jsonResponse);
@@ -31,20 +41,23 @@ const App = () => {
 
   useEffect(() => {
     fetchBeers()
-  }, [searchText]);
-
+  }, [searchText, highAbvBeers, classicRangeBeers]);
 
   return (
     <>
       <section className={styles.navBar}>
-        <NavBar searchText={searchText} setSearchText={setSearchText}/>
+        <NavBar updateSearchText={updateSearchText} 
+        setBeersWithHighABV={setBeersWithHighABV} 
+        handleABVFilter={handleABVFilter} 
+        handleHighAcidity={handleHighAcidity}
+        handleClassicBeers={handleClassicBeers} 
+        />
       </section>
       <section className={styles.main}>
         <Main />
       </section>
-      <button className={styles.button} onClick={() => fetchBeers("Buzz")}>Click me</button>
       <section className={styles.content}>
-        <Routes searchText={searchText} />
+        <Routes beers={beers} />
       </section>
     </>
   )

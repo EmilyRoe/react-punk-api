@@ -1,25 +1,19 @@
 import React, { Component } from 'react'
 import styles from "./NavBar.module.scss";
 import SearchBar from "../SearchBar";
+import FiltersList from "../FiltersList";
 
 const NavBar = (props) => {
-  const { searchText, setSearchText } = props;
+  const { updateSearchText, setBeersWithHighABV, handleABVFilter, handleClassicBeers, handleHighAcidity } = props;
 
   return (
     <nav className={styles.navBarContent}>
       
       <div className={styles.searchPanel}>
-        <SearchBar placeholder="Search..." searchText={searchText} setSearchText={setSearchText}/>
+        <SearchBar placeholder="Search..." updateSearchText={updateSearchText} />
       </div>
 
-      <ul>
-        <li>Highest ABV</li>
-        <button>Placeholder</button>
-        <li>Classic Range</li>
-        <button>Placeholder</button>
-        <li>Acidity</li>
-        <button>Placeholder</button>
-      </ul>
+    <FiltersList handleABVFilter={handleABVFilter} handleHighAcidity={handleHighAcidity} handleClassicBeers={handleClassicBeers} />
       
     </nav>
   )

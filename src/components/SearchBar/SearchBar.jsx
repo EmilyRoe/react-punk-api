@@ -1,15 +1,19 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import styles from './SearchBar.module.scss';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 
 const SearchBar = (props) => {
     const [isOpen, setIsOpen] = useState(false);
-    const { placeholder, searchText, setSearchText } = props;
+    const { placeholder, updateSearchText } = props;
     
-    const input = isOpen ? <input type="text" placeholder={placeholder} value={searchText} onChange={e => setSearchText(e.target.value)} /> : null 
+    const input = isOpen ? <input type="text" placeholder={placeholder} onInput={e => updateSearchText(e.target.value)} /> : null;
 
   return (
     <div className={styles.searchPanel}>
-      <span onClick={() => setIsOpen(!isOpen)}>Logo</span>
+      <span onClick={() => setIsOpen(!isOpen)}>
+        <FontAwesomeIcon icon={faMagnifyingGlass} size="2x"></FontAwesomeIcon>
+      </span>
       {input}
     </div>
   )
