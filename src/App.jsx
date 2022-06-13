@@ -43,6 +43,9 @@ const App = () => {
     fetchBeers()
   }, [searchText, highAbvBeers, classicRangeBeers]);
 
+  //If highAcidity true, filter to return array then .map through array
+  //Then pass filtered array to 
+
   return (
     <>
       <section className={styles.navBar}>
@@ -57,7 +60,7 @@ const App = () => {
         <Main />
       </section>
       <section className={styles.content}>
-        <Routes beers={beers} />
+        <Routes beers={beers} beersWithHighAcidity={beersWithHighAcidity} />
       </section>
     </>
   )

@@ -3,7 +3,7 @@ import styles from "./CardList.module.scss";
 import Card from "../Card";
 
 const CardList = (props) => {
-  const { beers, checkboxState } = props;
+  const { beers, checkboxState, beersWithHighAcidity } = props;
   
   const getCardJsx = (beer) => (
     <div className={styles.beerCards} key={beer.id} >
@@ -19,7 +19,7 @@ const CardList = (props) => {
 
   const beersList = beers.map(beer => <Card beer={beer} />)
 
-  const renderAcidicBeers = checkboxState === true ? acidicBeersList : beersList;
+  const renderAcidicBeers = beersWithHighAcidity ? acidicBeersList : beersList;
 
   return (
     <section className={styles.beerCards}>{renderAcidicBeers}</section>

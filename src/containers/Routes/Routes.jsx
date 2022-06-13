@@ -5,11 +5,11 @@ import SearchResults from "../SearchResults";
 import NotFound from "../../components/NotFound";
 
 const Routes = (props) => {
-  const { beers } = props;
+  const { beers, beersWithHighAcidity } = props;
 
   return (
     <Router>
-      <MainPage path="/" beers={beers} />
+      <MainPage path="/" beers={beers} beersWithHighAcidity={beersWithHighAcidity} />
       <SearchResults path="searchresults" />
       <NotFound default />
     </Router>
