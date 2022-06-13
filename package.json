@@ -1,7 +1,7 @@
 {
   "name": "react-final-project",
   "version": "0.1.0",
-  "homepage": "https://emilyroe.github.io/reactproject",
+  "homepage": "https://EmilyRoe.github.io/ReactProject",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.1.1",
