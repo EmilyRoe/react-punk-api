@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/react-punk-api/static/css/main.5ce1b49c.css",
+    "main.js": "/react-punk-api/static/js/main.c0bff471.js",
+    "static/js/787.6ba6b6a5.chunk.js": "/react-punk-api/static/js/787.6ba6b6a5.chunk.js",
+    "static/media/BrewDogBeersimg.jpeg": "/react-punk-api/static/media/BrewDogBeersimg.49f47864327ff6a1b2ee.jpeg",
+    "static/media/MainpageBackground.jpeg": "/react-punk-api/static/media/MainpageBackground.44736350379bbf175324.jpeg",
+    "index.html": "/react-punk-api/index.html",
+    "main.5ce1b49c.css.map": "/react-punk-api/static/css/main.5ce1b49c.css.map",
+    "main.c0bff471.js.map": "/react-punk-api/static/js/main.c0bff471.js.map",
+    "787.6ba6b6a5.chunk.js.map": "/react-punk-api/static/js/787.6ba6b6a5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5ce1b49c.css",
+    "static/js/main.c0bff471.js"
+  ]
+}
