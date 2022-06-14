@@ -1,0 +1,21 @@
+ul {
+  flex-direction: column;
+  list-style-type: none;
+  list-style-position: inside;
+  height: 100%;
+  width: 100%;
+  padding: 10px 10px;
+  text-align: left;
+  font-family: "Inter";
+  color: #F5F5F5;
+}
+ul .filter {
+  display: inline;
+  flex-direction: row;
+  width: 100%;
+  padding: 10px 0px;
+}
+ul .checkbox {
+  height: 15px;
+  width: 15px;
+}

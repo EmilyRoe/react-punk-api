@@ -1,9 +1,12 @@
 .beerCards {
-    max-width: 85vw;
+    max-width: 80vw;
     display: grid;
+    position: relative;
+    top: 75px;
+    left: 110px;
     grid-template-columns: repeat(auto-fill, 275px);
-    grid-gap: 20px;
-    align-self: start;
+    grid-gap: 30px;
+    align-self: center;
     justify-content: space-between;
     min-height: 100%;
     padding: 45px 75px;

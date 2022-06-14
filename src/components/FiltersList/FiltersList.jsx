@@ -5,14 +5,35 @@ const FiltersList = (props) => {
   const { beersWithHighABV, handleABVFilter, beersClassicRange, handleClassicBeers, beersWithHighAcidity, handleHighAcidity } = props;
 
   return (
-    <ul>
-        <li>Highest ABV</li>
-        <input type="checkbox" className={styles.checkbox} value={beersWithHighABV} onClick={handleABVFilter} />
-        <li>Classic Range</li>
-        <input type="checkbox" className={styles.checkbox} value={beersClassicRange} onClick={handleClassicBeers}/>
-        <li>Acidity</li>
-        <input type="checkbox" className={styles.checkbox} value={beersWithHighAcidity} onClick={handleHighAcidity}/>
-      </ul>
+    <div className={styles.filterMenu}>
+        <h2 className={styles.filterHeading}>Beer Filters:</h2>
+        <ul>
+          <div className={styles.filterItems}>
+            <input 
+              type="checkbox" 
+              className={styles.checkbox} 
+              value={beersWithHighABV} 
+              onClick={handleABVFilter} />
+            <li>Highest ABV</li>
+          </div>
+          <div className={styles.filterItems}>
+            <input 
+              type="checkbox" 
+              className={styles.checkbox} 
+              value={beersClassicRange} 
+              onClick={handleClassicBeers}/>
+            <li>Classic Range</li>
+          </div>
+          <div className={styles.filterItems}>
+            <input 
+              type="checkbox" 
+              className={styles.checkbox} 
+              value={beersWithHighAcidity} 
+              onClick={handleHighAcidity}/>
+            <li>Acidity</li>
+          </div>
+        </ul>
+    </div>
   )
 }
 
