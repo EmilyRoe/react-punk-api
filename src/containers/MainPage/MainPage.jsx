@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from "./MainPage.module.scss";
+import { Link } from "@reach/router";
 
 import CardList from "../../components/CardList";
 import FeedbackPanel from "../../components/FeedbackPanel";
@@ -15,6 +16,9 @@ const MainPage = (props) => {
 
   return (
     <section className={styles.mainPage}>
+      <Link to="/">
+        <h2 className={styles.mainHeading}>BrewDog Beer API Challenge</h2>
+      </Link>
       {contentJsx}
     </section>
   );

@@ -5,9 +5,9 @@ import { Link } from "@reach/router";
 const Main = () => {
   return (
     <section className={styles.main}>
-      <Link to="/">
+      {/* <Link to="/">
         <h2 className={styles.mainHeading}>BrewDog Beer API Challenge</h2>
-      </Link>
+      </Link> */}
     </section>
   )
 }
