@@ -1,5 +1,4 @@
 import React from 'react'
-// import { Router } from "@reach/router"; 
 import { Routes as AppRoutes, Route } from 'react-router-dom';
 import MainPage from "../MainPage";
 import SearchResults from "../SearchResults";
