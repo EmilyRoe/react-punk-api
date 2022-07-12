@@ -1,6 +1,5 @@
 import React from 'react'
 import styles from "./Main.module.scss";
-import { Link } from "@reach/router";
 
 const Main = () => {
   return (

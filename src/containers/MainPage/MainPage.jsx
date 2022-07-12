@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from "./MainPage.module.scss";
-import { Link } from "@reach/router";
+import { Link } from "react-router-dom";
 
 import CardList from "../../components/CardList";
 import FeedbackPanel from "../../components/FeedbackPanel";
