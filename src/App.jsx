@@ -1,7 +1,7 @@
 import React, { Component, useState, useEffect } from 'react'
 import styles from "./App.module.scss";
 import NavBar from "./components/NavBar";
-import Main from "./components/Main";
+// import Main from "./components/Main";
 import Routes from "./containers/Routes";
 
 const App = () => {
@@ -43,9 +43,6 @@ const App = () => {
     fetchBeers()
   }, [searchText, highAbvBeers, classicRangeBeers]);
 
-  //If highAcidity true, filter to return array then .map through array
-  //Then pass filtered array to 
-
   return (
     <>
       <section className={styles.navBar}>
@@ -56,9 +53,9 @@ const App = () => {
         handleClassicBeers={handleClassicBeers} 
         />
       </section>
-      <section className={styles.main}>
+      {/* <section className={styles.main}>
         <Main />
-      </section>
+      </section> */}
       <section className={styles.content}>
         <Routes beers={beers} beersWithHighAcidity={beersWithHighAcidity} />
       </section>

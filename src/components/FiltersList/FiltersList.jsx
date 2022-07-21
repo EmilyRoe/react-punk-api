@@ -11,7 +11,6 @@ const FiltersList = (props) => {
           <div className={styles.filterItems}>
             <input 
               type="checkbox" 
-              className={styles.checkbox} 
               value={beersWithHighABV} 
               onClick={handleABVFilter} />
             <li>Highest ABV</li>
@@ -19,7 +18,6 @@ const FiltersList = (props) => {
           <div className={styles.filterItems}>
             <input 
               type="checkbox" 
-              className={styles.checkbox} 
               value={beersClassicRange} 
               onClick={handleClassicBeers}/>
             <li>Classic Range</li>
@@ -27,7 +25,6 @@ const FiltersList = (props) => {
           <div className={styles.filterItems}>
             <input 
               type="checkbox" 
-              className={styles.checkbox} 
               value={beersWithHighAcidity} 
               onClick={handleHighAcidity}/>
             <li>Acidity</li>

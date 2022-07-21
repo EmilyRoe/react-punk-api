@@ -16,7 +16,7 @@ const MainPage = (props) => {
 
   return (
     <section className={styles.mainPage}>
-      <Link to="/">
+      <Link style={{textDecoration: 'none'}} to="/">
         <h2 className={styles.mainHeading}>BrewDog Beer API Challenge</h2>
       </Link>
       {contentJsx}

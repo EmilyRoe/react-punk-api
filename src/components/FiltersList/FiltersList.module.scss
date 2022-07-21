@@ -1,12 +1,12 @@
 .filterMenu {
     height: auto;
-    width: 150px;
+    width: 300px;
     padding: 10px 10px;
     display: flex;
     flex-direction: column;
     justify-content: left;
     position: fixed;
-    top: 70px;
+    top: 60px;
     left: 2px;
 
     .filterHeading {
@@ -25,57 +25,13 @@
         display: flex;
         flex-wrap: nowrap;
         flex-direction: row;
-        width: 100px;
+        width: 300px;
         padding: 5px;
         font-size: 20px;
-    }
-
-    .checkbox {
-        display: grid;
-        flex-wrap: nowrap;
-        height: auto;
-        width: auto;
-        margin: 4px 5px;
     }
 }
 
 
 
-
-// ul {
-//     display: flex;
-//     flex-direction: column;
-//     list-style-type: none;
-//     list-style-position: inside;
-//     height: 100%;
-//     width: 100%;
-//     padding: 10px 10px;
-//     text-align: left;
-//     font-family: 'Inter';
-//     color: #F5F5F5;
-
-//     .filter {
-//         // display: inline;
-//         // flex-direction: row;
-//         // width: 100%;
-//         // padding: 10px 0px;
-//         display: flex;
-//         flex-wrap: nowrap;
-//         flex-direction: row;
-//         width: 100px;
-//     }
-
-//     // li {
-//     //     padding: 10px 0px;
-//     // }
-
-//     .checkbox {
-//         display: grid;
-//         flex-wrap: nowrap;
-//         height: 15px;
-//         width: 15px;
-//     //     margin: 0px 0px;
-//     }
-// }
 
 
