@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/react-punk-api/static/css/main.c4b5b62b.css",
-    "main.js": "/react-punk-api/static/js/main.23028ec5.js",
+    "main.css": "/react-punk-api/static/css/main.2f75a0c5.css",
+    "main.js": "/react-punk-api/static/js/main.33358d96.js",
     "static/js/787.6ba6b6a5.chunk.js": "/react-punk-api/static/js/787.6ba6b6a5.chunk.js",
     "static/media/BrewDogBeersimg.jpeg": "/react-punk-api/static/media/BrewDogBeersimg.49f47864327ff6a1b2ee.jpeg",
     "static/media/MainpageBackground.jpeg": "/react-punk-api/static/media/MainpageBackground.44736350379bbf175324.jpeg",
     "index.html": "/react-punk-api/index.html",
-    "main.c4b5b62b.css.map": "/react-punk-api/static/css/main.c4b5b62b.css.map",
-    "main.23028ec5.js.map": "/react-punk-api/static/js/main.23028ec5.js.map",
+    "main.2f75a0c5.css.map": "/react-punk-api/static/css/main.2f75a0c5.css.map",
+    "main.33358d96.js.map": "/react-punk-api/static/js/main.33358d96.js.map",
     "787.6ba6b6a5.chunk.js.map": "/react-punk-api/static/js/787.6ba6b6a5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c4b5b62b.css",
-    "static/js/main.23028ec5.js"
+    "static/css/main.2f75a0c5.css",
+    "static/js/main.33358d96.js"
   ]
 }
